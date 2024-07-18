@@ -46,3 +46,13 @@ pnpm run dev
 ```
 
 4. Open [**http://localhost:4321**](http://localhost:4321/) with your browser to see the result 🚀
+
+
+
+
+//TODO
+1. Crear flujo de usuario 
+2. Arreglar links de contacto(instagram, whatsApp, Linkedin)
+3. Dibujar logo y vectorizarlo para descargarlo en formato .svg
+4. Agregar fuente primaria
+5. 
