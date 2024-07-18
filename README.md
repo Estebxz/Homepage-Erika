@@ -38,11 +38,11 @@ pnpm install o pnpm i
 3. Run the development server:
 
 ```bash
-# Run with bun:
-bun dev
+# Run with npm:
+npm run dev 
 
 # Run with pnpm:
-pnpm dev
+pnpm run dev
 ```
 
 4. Open [**http://localhost:4321**](http://localhost:4321/) with your browser to see the result 🚀
