@@ -1,0 +1,35 @@
+{
+  "SEO_TITLE": "",
+  "SEO_SUBTITLE": "",
+  "SEO_DESCRIPTION": "",
+  "SEO": {
+    "ERROR_404_TITLE": "Página 404 não encontrada",
+    "ERROR_404_DESCRIPTION": "página não encontrada (Erro 404). Verifique a URL ou explore nossas seções. ¿Precisa de ajuda? Contate-nos"
+  },
+  "HEADER": {
+    "LOGO_TITLE": "Voltar para"
+  },
+  "HEADER_BRIEFCASE": "PORTFÓLIO",
+  "HEADER_ABOUT_US": "SOBRE NÓS",
+  "HEADER_CONTACT_US": "FALE CONOSCO",
+  "FOOTER": {
+    "DISCLAIMER": "",
+      "LEGAL": {
+      "TITLE": "Legal",
+      "NOTICE": "Aviso Legal",
+      "PRIVACY": "Privacidade",
+      "COOKIES": "Biscoitos",
+      "PRIVACY_POLICY": "Política de Privacidade",
+      "TOS": "Termos e Condições"
+     },
+     "WEB_MAP": {
+      "TITLE": "Mapa da Web",
+      "HOME": "Casa",
+      "BRIEFCASE": "Portfólio",
+      "ABOUT_US": "Sobre nós",
+      "CONTACT_US": "Contato"
+     },
+     "PRODUCED_BY": "Produzido por"
+    }
+   }
+ 

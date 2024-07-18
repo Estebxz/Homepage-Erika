@@ -1,0 +1,34 @@
+{
+  "SEO_TITLE": "",
+  "SEO_SUBTITLE": "",
+  "SEO_DESCRIPTION": "",
+  "SEO": {
+    "ERROR_404_TITLE": "404 page not found",
+    "ERROR_404_DESCRIPTION": "page not found (Error 404). Check the URL or explore our sections. ¿Need help? Contact us"
+  },
+  "HEADER": {
+    "LOGO_TITLE": "Back to "
+  },
+  "HEADER_BRIEFCASE": "PORTFOLIO",
+  "HEADER_ABOUT_US": "ABOUT US",
+  "HEADER_CONTACT_US": "CONTACT US",
+  "FOOTER": {
+    "DISCLAIMER": "",
+      "LEGAL": {
+      "TITLE": "Legal",
+      "NOTICE": "Legal Notice",
+      "PRIVACY": "Privacy",
+      "COOKIES": "Cookies",
+      "PRIVACY_POLICY": "Privacy Policy",
+      "TOS": "Terms and Conditions"
+    },
+    "WEB_MAP": {
+      "TITLE": "Website Map",
+      "HOME": "Home",
+      "BRIEFCASE": "Portfolio",
+      "ABOUT_US": "About us",
+      "CONTACT_US": "Contact"
+    },
+    "PRODUCED_BY": "Produced by"
+    }
+  }

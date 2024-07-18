@@ -1,0 +1,126 @@
+---
+import Logo from "@/components/icons/Logo.astro"
+import Link from "@/components/Link.astro"
+import InstagramIcon from "@/components/socials/Instagram.astro"
+import WhatsAppIcon from "@/components/socials/WhatsApp.astro"
+import LinkedlnIcon from "@/components/socials/Linkedin.astro"
+import GithubIcon from "@/components/socials/Github.astro"
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/i18n/utils"
+
+import { getI18N } from "@/i18n/index"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+<footer class="bg-black/40">
+  <div class="mx-auto w-full max-w-screen-xl p-4 px-6 py-44 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 flex flex-col md:mb-0">
+        <a
+          href=""
+          class="-mt-12 flex items-center justify-center"
+        >
+          <Logo class="h-auto w-24"/>
+        </a>
+        <div class="mt-6 flex justify-center gap-x-4">
+          <a href="" class="text-white duration-300">
+            <InstagramIcon />
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="" class="text-white hover:text-[#25D366] duration-300">
+            <WhatsAppIcon />
+            <span class="sr-only">WhatsApp</span>
+          </a>
+          <a href="" class="text-white hover:text-[#0077B5] duration-300">
+            <LinkedlnIcon />
+            <span class="sr-only">Linkedln</span>
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-8 sm:grid-cols-2">
+        <div>
+          <h2 class="mb-4 text-sm font-semibold uppercase text-white">
+            {i18n.FOOTER.LEGAL.TITLE}
+          </h2>
+          <ul class="flex flex-col gap-2 font-medium text-gray-400">
+            <li>
+              <Link
+                href={translatePath('/aviso-legal/')}
+                class="hover:underline"
+                >
+                {t('nav.legal')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={translatePath('/privacidad/')}
+                class="hover:underline"
+                >
+                {t('nav.privacidad')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={translatePath('/cookies/')}
+                class="hover:underline"
+              >
+                {t('nav.cookies')}
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-4 text-sm font-semibold uppercase text-white">
+            {i18n.FOOTER.WEB_MAP.TITLE}
+          </h2>
+          <ul class="flex flex-col gap-2 font-medium text-gray-400">
+            <li>
+              <Link
+                href={translatePath('/portafolio')}
+                class="hover:underline"
+                >
+                {t('nav.briefcase')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={translatePath('/acerca-de-nosotros/')}
+                class="hover:underline"
+                >
+                {t('nav.about_us')}
+            </Link>
+            </li>
+            <li>
+              <Link
+                href={translatePath('/contacto/')}
+                class="hover:underline hover:text-primary duration-300"
+                >
+                {t('nav.contact_us')}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-2 border-white/10 sm:mx-auto lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-gray-400 sm:text-center"
+        >&copy; Page  -&nbsp;{new Date().getFullYear()}&nbsp;{i18n.FOOTER.DISCLAIMER}
+      </span>
+      <div class="mt-4 flex sm:mt-0 sm:justify-center">
+        <a
+          href=""
+          class="text-gray-500 hover:text-white ms-5 duration-300"
+        >
+        <GithubIcon />
+          <span class="sr-only">GitHub account</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

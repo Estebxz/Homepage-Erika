@@ -1,0 +1,24 @@
+---
+interface HeaderLinkProps {
+  checkActive?: boolean
+  href?: string
+  class?: string
+}
+
+const { checkActive = true, href, class: className, ...restOfProps } = Astro.props
+const currentPath = Astro.url.pathname
+const isActive = currentPath === href && checkActive
+---
+
+<a 
+  href={href}
+  class:list={[
+    className, "border-b-2 uppercase text-sm", isActive ? "border-white" : "border-transparent"
+  ]}
+  {...restOfProps}
+>
+    <slot name="before"/>
+    <slot />
+    <slot name="after"/>
+</a>
+

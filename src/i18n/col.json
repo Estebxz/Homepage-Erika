@@ -1,0 +1,34 @@
+{
+  "SEO_TITLE": "",
+  "SEO_SUBTITLE": "",
+  "SEO_DESCRIPTIÓN": "",
+  "SEO": {
+    "ERROR_404_TITLE": "404 pagina no encontrada",
+    "ERROR_404_DESCRIPTIÓN": "pagina no encontrada(Error 404). Revisa la URL o explora nuestras secciones. ¿Necesitas ayuda? Contactanos"
+  },
+  "HEADER": {
+    "LOGO_TITLE": "Regresar a "
+  },
+  "HEADER_BRIEFCASE": "PORTAFOLIO",
+  "HEADER_ABOUT_US": "ACERCA DE NOSOTROS",
+  "HEADER_CONTACT_US": "CONTACTENOS",
+  "FOOTER": {
+    "DISCLAIMER": "",
+		"LEGAL": {
+			"TITLE": "Legal",
+			"NOTICE": "Aviso Legal",
+			"PRIVACY": "Privacidad",
+			"COOKIES": "Cookies",
+			"PRIVACY_POLICY": "Política de Privacidad",
+			"TOS": "Términos y Condiciones"
+		},
+		"WEB_MAP": {
+			"TITLE": "Mapa Web",
+			"HOME": "Inicio",
+			"BRIEFCASE": "Portafolio",
+			"ABOUT_US": "Acerca de nosotros",
+      "CONTACT_US": "Contacto"
+		},
+		"PRODUCED_BY": "Producido por"
+  }
+}
